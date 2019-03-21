@@ -1,0 +1,17 @@
+<h2>Update Pet</h2>
+<form action="/products/<%= @product.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <div>
+    Name: <input type="text" name="name" value="<%= @product.name %>" />
+  </div>
+  <div>
+    Price: <input type="text" name="price" value="<%= @product.price %>" />
+  </div>
+  <div>
+    Description: <input type="text" name="description" value="<%= @product.description %>" />
+  </div>
+<!--   <div>
+    Supplier: <input type="text" name="supplier_id" />
+  </div> -->
+  <input type="submit" name="" value="Update Pet" />
+</form>

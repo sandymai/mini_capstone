@@ -1,0 +1,6 @@
+<h2><%= @product.name %></h2>
+<h4><%= @product.price %></h4>
+<h4><%= @product.description %></h4>
+<a href="/products">Back to all other pets</a>
+<a href="/products/<% @product.id %>/edit">Edit Pet</a>
+<a href="/products/<% @product.id %>" data-method="delete" rel="nofollow">Remove Pet</a>
